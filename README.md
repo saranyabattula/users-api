@@ -39,13 +39,15 @@ mvn spring-boot:run
 users table will be automatically generated in Database once the application is started.
 
 To access the database, open [H2-Console](http://localhost:8050/h2-console)
+```
 database=jdbc:h2:mem:testdb
 username=admin
 password=admin
+```
 
 ## Postman Collection
 Below postman collection can be used to test the APIs.
 [https://www.getpostman.com/collections/50b34928a7912e607903](https://www.getpostman.com/collections/50b34928a7912e607903)
 
 ## Contributor
-@SaranyaVinayagamBattula
+Saranya Vinayagam Battula
