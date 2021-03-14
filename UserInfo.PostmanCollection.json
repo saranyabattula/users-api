@@ -1,0 +1,316 @@
+{
+	"variables": [],
+	"info": {
+		"name": "User_Info_Application",
+		"_postman_id": "e74bb3d6-72d6-12a5-ece9-c07d47b887b7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"request": {
+				"url": "http://localhost:8050/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Mrs\",\n\t\"email\": \"saranyabattula@gmail.com\",\n\t\"firstName\": \"Saranya\",\n\t\"lastName\": \"Battula\",\n\t\"dateOfBirth\": \"23-04-1992\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "370fd74a-77bf-4556-ac9d-bcdc2eda0fe5",
+					"name": "CreateUser",
+					"originalRequest": {
+						"url": "http://localhost:8050/users",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Mrs\",\n\t\"email\": \"samsaro@gmail.com\",\n\t\"firstName\": \"sam\",\n\t\"lastName\": \"saro\",\n\t\"dateOfBirth\": \"08-09-1994\"\n}"
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 14 Mar 2021 21:03:37 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=60",
+							"description": "Custom header"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 41,
+					"body": "{\"id\":3,\"title\":\"PLbEk79R6JqOEkeCGV6jdA==\",\"email\":\"bbCw9umeqISdrhWTwbECAYAJq6OI5fHOnPgkMNQNZgU=\",\"firstName\":\"cvgr4DHqEcc8erHBXlwXsw==\",\"lastName\":\"aAp7zbQDGvFLJWsRE7pZXQ==\",\"dateOfBirth\":\"jfWp6TijtireehfCetucfQ==\"}"
+				}
+			]
+		},
+		{
+			"name": "GetAllEncryptedUser",
+			"request": {
+				"url": "http://localhost:8050/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "4521ca00-13a2-4a6a-9ef9-2534f7a05140",
+					"name": "GetAllEncryptedUser",
+					"originalRequest": {
+						"url": "http://localhost:8050/users",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 14 Mar 2021 21:12:45 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=60",
+							"description": "Custom header"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 975,
+					"body": "[{\"id\":1,\"title\":\"PLbEk79R6JqOEkeCGV6jdA==\",\"email\":\"jEZCOaWwt+2viuGSj4NP2Oi9vXbgtDTLOrv2GluG4EQ=\",\"firstName\":\"L6poiO5bhzEQiYPdt/6l5A==\",\"lastName\":\"o7cUxDFzAa9sPjAa8h+slg==\",\"dateOfBirth\":\"lvhUYtbJHct7me508j86UA==\"},{\"id\":2,\"title\":\"rBxPmPfQpT4J9wHQbETySA==\",\"email\":\"jEZCOaWwt+2viuGSj4NP2Oi9vXbgtDTLOrv2GluG4EQ=\",\"firstName\":\"L6poiO5bhzEQiYPdt/6l5A==\",\"lastName\":\"o7cUxDFzAa9sPjAa8h+slg==\",\"dateOfBirth\":\"lvhUYtbJHct7me508j86UA==\"},{\"id\":3,\"title\":\"PLbEk79R6JqOEkeCGV6jdA==\",\"email\":\"bbCw9umeqISdrhWTwbECAYAJq6OI5fHOnPgkMNQNZgU=\",\"firstName\":\"cvgr4DHqEcc8erHBXlwXsw==\",\"lastName\":\"aAp7zbQDGvFLJWsRE7pZXQ==\",\"dateOfBirth\":\"jfWp6TijtireehfCetucfQ==\"}]"
+				}
+			]
+		},
+		{
+			"name": "GetEncryptedUserById",
+			"request": {
+				"url": "http://localhost:8050/users/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "3e309d6c-4074-46ff-8f71-607ca133d228",
+					"name": "GetEncryptedUserById",
+					"originalRequest": {
+						"url": "http://localhost:8050/users/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 14 Mar 2021 21:15:37 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=60",
+							"description": "Custom header"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 323,
+					"body": "{\"id\":1,\"title\":\"PLbEk79R6JqOEkeCGV6jdA==\",\"email\":\"jEZCOaWwt+2viuGSj4NP2Oi9vXbgtDTLOrv2GluG4EQ=\",\"firstName\":\"L6poiO5bhzEQiYPdt/6l5A==\",\"lastName\":\"o7cUxDFzAa9sPjAa8h+slg==\",\"dateOfBirth\":\"lvhUYtbJHct7me508j86UA==\"}"
+				}
+			]
+		},
+		{
+			"name": "GetDecryptedUserById",
+			"request": {
+				"url": "http://localhost:8050/users/1/decrypt",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "b7075440-860b-40a7-af55-866fc5184482",
+					"name": "GetDecryptedUserById",
+					"originalRequest": {
+						"url": "http://localhost:8050/users/1/decrypt",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 14 Mar 2021 21:18:01 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=60",
+							"description": "Custom header"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 53,
+					"body": "{\"id\":1,\"title\":\"Mrs\",\"email\":\"jarvis@gmail.com\",\"firstName\":\"Tony\",\"lastName\":\"Stark\",\"dateOfBirth\":\"23-04-1992\"}"
+				}
+			]
+		}
+	]
+}

@@ -13,14 +13,13 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/users",
-        produces = "application/json",
-        consumes = "application/json")
+        produces = "application/json")
 public class UsersController {
 
     @Autowired private UserRepository userRepository;
     @Autowired private EncryptionService encryptionService;
 
-    @PostMapping
+    @PostMapping(consumes = "application/json")
     public ResponseEntity<User> createUser(@RequestBody User user){
         try {
             User userEntity = buildUserEntity(user);
