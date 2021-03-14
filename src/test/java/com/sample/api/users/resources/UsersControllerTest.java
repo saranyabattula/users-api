@@ -66,7 +66,7 @@ public class UsersControllerTest {
         when(userRepository.findById(any(Long.class))).thenReturn(Optional.of(encryptedUser));
 
         // THEN
-        ResponseEntity<User> response = usersController.getDecryptedOne("1001");
+        ResponseEntity<User> response = usersController.getDecryptedUserDetails("1001");
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals("user@gmail.com", response.getBody().getEmail());
